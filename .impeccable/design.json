@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-10T16:20:00.000Z",
+  "title": "Design System: Aether",
+  "extensions": {
+    "colorMeta": {
+      "fog": {
+        "role": "neutral",
+        "displayName": "Fog",
+        "canonical": "#eef1f4",
+        "tonalRamp": ["#eef1f4", "#dfe4e9", "#c5ccd3", "#a8b1ba", "#8a949e", "#6d7882", "#5a6570", "#2f3438"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#2f3438",
+        "tonalRamp": ["#2f3438", "#3d4449", "#5a6570", "#8a949e", "#c5ccd3", "#eef1f4"]
+      },
+      "mute": {
+        "role": "neutral",
+        "displayName": "Mute",
+        "canonical": "#5a6570",
+        "tonalRamp": ["#5a6570", "#6d7882", "#8a949e", "#a8b1ba"]
+      },
+      "moss": {
+        "role": "primary",
+        "displayName": "Moss",
+        "canonical": "#4f6458",
+        "tonalRamp": ["#2d3a33", "#3c4c44", "#4f6458", "#6a7f72", "#8ea397"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Catalog title only (Aether catalog), Nunito." },
+      "flourish": { "displayName": "Flourish", "purpose": "Italianno veil word at 6rem." },
+      "title": { "displayName": "Title", "purpose": "Story heading and param values, Nunito." },
+      "body": { "displayName": "Body", "purpose": "Overlay legend at 1rem." },
+      "label": { "displayName": "Label", "purpose": "Story chips, units, pads, skip link at 0.6875rem." }
+    },
+    "shadows": [
+      {
+        "name": "knob-inset-ring",
+        "value": "inset 0 0 0 1px var(--ink)",
+        "purpose": "1px ink box on the knob hit; not a drop shadow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "glyph-field",
+        "value": "1200ms interval, 0.35 phase delta; pause when hidden, off-screen, still/reduce atmosphere, or prefers-reduced-motion: reduce",
+        "purpose": "Glacial ASCII weather behind the operated hit."
+      },
+      {
+        "name": "wisp-drift",
+        "value": "48s ease-in-out closed path translate3d; none when still, reduce, or prefers-reduced-motion: reduce",
+        "purpose": "Ribbon haze over the glyph field; no 48s sawtooth jump."
+      },
+      {
+        "name": "hit-ack",
+        "value": "120ms cubic-bezier(0.16, 1, 0.3, 1) color-only; 80ms when reduce; rotor transform none",
+        "purpose": "Acknowledge hover/latch without interpolating analog drag."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "coarse-pointer",
+        "value": "(pointer: coarse)",
+        "purpose": "Story chips and overlay keep 2.75rem min-height; extra inline padding."
+      },
+      {
+        "name": "fine-hover",
+        "value": "(hover: hover) and (pointer: fine)",
+        "purpose": "Mute invert on rest chips, pads, and steppers."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Story chip",
+      "kind": "nav",
+      "refersTo": "story-chip",
+      "description": "Bracketed catalog story at rest: 1px mute box on fog, 44px min-height.",
+      "html": "<button class=\"ds-story-chip\" type=\"button\">[ KNOB ]</button>",
+      "css": ".ds-story-chip { font-family: Nunito, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink, #2f3438); background: var(--bg, #eef1f4); border: 1px solid var(--muted, #5a6570); border-radius: 0; min-height: 2.75rem; padding: 0.4rem 0.7rem; cursor: pointer; } .ds-story-chip:hover { background: var(--muted, #5a6570); color: var(--bg, #eef1f4); } .ds-story-chip:focus-visible { outline: 3px solid var(--ink, #2f3438); outline-offset: 3px; }"
+    },
+    {
+      "name": "Story chip current",
+      "kind": "nav",
+      "refersTo": "story-chip-current",
+      "description": "Open story: moss fill, fog type; aria-current only.",
+      "html": "<button class=\"ds-story-chip-current\" type=\"button\" aria-current=\"true\">[ KNOB ]</button>",
+      "css": ".ds-story-chip-current { font-family: Nunito, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--bg, #eef1f4); background: var(--accent, #4f6458); border: 1px solid var(--accent, #4f6458); border-radius: 0; min-height: 2.75rem; padding: 0.4rem 0.7rem; cursor: pointer; } .ds-story-chip-current:focus-visible { outline: 3px solid var(--ink, #2f3438); outline-offset: 3px; }"
+    },
+    {
+      "name": "Pad",
+      "kind": "button",
+      "refersTo": "pad",
+      "description": "2.75rem square hit with 1px ink box.",
+      "html": "<button class=\"ds-pad\" type=\"button\">A</button>",
+      "css": ".ds-pad { width: 2.75rem; height: 2.75rem; padding: 0; border: 1px solid var(--ink, #2f3438); border-radius: 0; background: var(--bg, #eef1f4); color: var(--ink, #2f3438); font-family: Nunito, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; } .ds-pad:hover { background: var(--muted, #5a6570); color: var(--bg, #eef1f4); } .ds-pad:focus-visible { outline: 3px solid var(--ink, #2f3438); outline-offset: 3px; }"
+    },
+    {
+      "name": "Pad pressed",
+      "kind": "button",
+      "refersTo": "pad-pressed",
+      "description": "Latched pad: moss fill, fog glyph.",
+      "html": "<button class=\"ds-pad-pressed\" type=\"button\" aria-pressed=\"true\">B</button>",
+      "css": ".ds-pad-pressed { width: 2.75rem; height: 2.75rem; padding: 0; border: 1px solid var(--ink, #2f3438); border-radius: 0; background: var(--accent, #4f6458); color: var(--bg, #eef1f4); font-family: Nunito, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; } .ds-pad-pressed:focus-visible { outline: 3px solid var(--ink, #2f3438); outline-offset: 3px; }"
+    },
+    {
+      "name": "Stepper button",
+      "kind": "button",
+      "refersTo": "stepper-btn",
+      "description": "2.75rem square 1px box; pair sits under param chrome.",
+      "html": "<button class=\"ds-stepper-btn\" type=\"button\" aria-label=\"previous\">‹</button>",
+      "css": ".ds-stepper-btn { width: 2.75rem; height: 2.75rem; min-width: 2.75rem; min-height: 2.75rem; padding: 0; border: 1px solid var(--ink, #2f3438); border-radius: 0; background: var(--bg, #eef1f4); color: var(--ink, #2f3438); font-family: Nunito, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; } .ds-stepper-btn:hover { background: var(--muted, #5a6570); color: var(--bg, #eef1f4); } .ds-stepper-btn:focus-visible { outline: 3px solid var(--ink, #2f3438); outline-offset: 3px; }"
+    },
+    {
+      "name": "Nameplate",
+      "kind": "card",
+      "refersTo": "nameplate",
+      "description": "1px ink box; model at value size, caption muted.",
+      "html": "<div class=\"ds-nameplate\"><span class=\"ds-nameplate-model\">Blank</span><span class=\"ds-nameplate-caption\">kit</span></div>",
+      "css": ".ds-nameplate { display: flex; flex-direction: row; align-items: baseline; justify-content: space-between; gap: 0.75rem; width: 100%; padding: 0.35rem 0.45rem 0.45rem; border: 1px solid var(--ink, #2f3438); border-radius: 0; color: var(--ink, #2f3438); background: var(--page, #eef1f4); font-family: Nunito, ui-sans-serif, system-ui, sans-serif; } .ds-nameplate-model { font-size: 1rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; } .ds-nameplate-caption { color: var(--muted, #5a6570); font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Overlay toggle",
+      "kind": "button",
+      "refersTo": "overlay-toggle",
+      "description": "Same chip language as stories; inspect-only, Surface and plates.",
+      "html": "<button class=\"ds-overlay-toggle\" type=\"button\" aria-pressed=\"false\">Overlay</button>",
+      "css": ".ds-overlay-toggle { font-family: Nunito, ui-sans-serif, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink, #2f3438); background: var(--bg, #eef1f4); border: 1px solid var(--muted, #5a6570); border-radius: 0; min-height: 2.75rem; padding: 0.4rem 0.7rem; cursor: pointer; } .ds-overlay-toggle[aria-pressed='true'] { background: var(--accent, #4f6458); color: var(--bg, #eef1f4); } .ds-overlay-toggle:focus-visible { outline: 3px solid var(--ink, #2f3438); outline-offset: 3px; }"
+    },
+    {
+      "name": "Knob hit",
+      "kind": "custom",
+      "refersTo": "knob",
+      "description": "Square ink box with square moss rotor; kit default 40px / 108px dial.",
+      "html": "<div class=\"ds-knob-hit\" role=\"slider\" aria-valuenow=\"40\" aria-label=\"Rate\"><span class=\"ds-knob-rotor\"></span></div>",
+      "css": ".ds-knob-hit { position: relative; width: 108px; height: 108px; border: none; border-radius: 0; background: var(--surface, #eef1f4); box-shadow: inset 0 0 0 1px var(--ink, #2f3438); display: flex; align-items: center; justify-content: center; cursor: pointer; } .ds-knob-hit:focus-visible { outline: 3px solid var(--ink, #2f3438); outline-offset: 3px; } .ds-knob-rotor { width: 12%; height: 42%; border-radius: 0; background: var(--accent, #4f6458); position: absolute; bottom: 50%; left: 44%; transform-origin: 50% 100%; transform: rotate(-40deg); }"
+    },
+    {
+      "name": "Slider",
+      "kind": "input",
+      "refersTo": "slider",
+      "description": "1px ink track with moss fill.",
+      "html": "<div class=\"ds-slider-hit\" role=\"slider\" aria-valuenow=\"35\" aria-label=\"Mix\"><div class=\"ds-slider-track\"><div class=\"ds-slider-fill\"></div></div></div>",
+      "css": ".ds-slider-hit { width: 9rem; min-width: 3.5rem; height: 1.5rem; min-height: 1.5rem; background: transparent; display: flex; align-items: center; cursor: pointer; } .ds-slider-track { width: 100%; height: 0.75rem; border: 1px solid var(--ink, #2f3438); background: var(--page, #eef1f4); overflow: hidden; } .ds-slider-fill { width: 35%; height: 100%; background: var(--accent, #4f6458); } .ds-slider-hit:focus-visible { outline: 3px solid var(--ink, #2f3438); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The ASCII Veil",
+    "overview": "Aether’s catalog is a full-bleed mist field, not a card stack and not a phosphor terminal. Fog is the ground. Charcoal is the ink. Moss is latched-on. Tone is sparse glyph density on a slow ASCII veil sitting behind a single hit. Each kit control is its own story; Seto opens one, operates it, then opens Prism · Hold as another story.\n\nKit tokens and hits are the family language. Catalog chrome is the inspector veil; it is not a Van de Graaf carrier. Surfaces still place widgets with a Van de Graaf construction derived from the plate size.",
+    "keyCharacteristics": [
+      "Fog (#eef1f4), ink (#2f3438), mute (#5a6570), moss (#4f6458)",
+      "Nunito chrome, Italianno live, VT323 only in the field",
+      "Slow ASCII veil; paused when hidden or reduced-motion",
+      "1px ink boxes; square rotors; moss invert on latch and current story",
+      "44px minimum on chips, pads, and steppers",
+      "Overlay as inspect-only paint on Surface and plates"
+    ],
+    "rules": [
+      { "name": "The Veil Rule", "body": "Grey in the field is sparse glyph density on mist, never a phosphor hex.", "section": "colors" },
+      { "name": "The Latch Rule", "body": "Rest chrome is ink on fog. Moss is function: current story and latched-on.", "section": "colors" },
+      { "name": "The Three-Face Rule", "body": "Nunito for operate chrome. Italianno for live. VT323 never leaves the ASCII field.", "section": "typography" },
+      { "name": "The Flat-Field Rule", "body": "Surfaces and chrome stay flat at rest. Depth is veil density or invert, never offset shadow.", "section": "elevation" },
+      { "name": "The Two-Clock Rule", "body": "The veil drifts on a glacial clock. Hits acknowledge with 120ms color-only invert. Knob rotors never interpolate transform while dragging.", "section": "elevation" },
+      { "name": "The 1px Box Rule", "body": "Hits are ink boxes. Do not thicken the stroke, and do not round the corners.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do isolate one control type per story, then treat Prism · Hold as another story.",
+      "Do let the veil drift slowly; acknowledge hits in 120ms color; keep rotor drag analog-instant.",
+      "Do draw hits as 1px ink boxes with 44px minimums on chips, pads, and steppers.",
+      "Do use moss invert for current story and latched pads."
+    ],
+    "donts": [
+      "Don't restore HyperCard menus, ice desks, teal chips, phosphor-on-black terminals, or IBM Plex.",
+      "Don't use Teenage Engineering orange or treat --gxsc-fluoro as neon green.",
+      "Don't show Overlay on Knob, Slider, Pad, Stepper, or Nameplate.",
+      "Don't round rotors, pads, or chips, or add drop shadows.",
+      "Don't tick the ASCII field like a CRT.",
+      "Don't interpolate the knob rotor while dragging."
+    ]
+  }
+}

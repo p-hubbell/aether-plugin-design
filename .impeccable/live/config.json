@@ -1,0 +1,6 @@
+{
+  "files": [".ladle/head.html"],
+  "insertBefore": "</head>",
+  "commentSyntax": "html",
+  "cspChecked": true
+}

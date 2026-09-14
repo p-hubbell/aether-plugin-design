@@ -1,0 +1,211 @@
+{
+  "title": "Restart the visual world",
+  "question": "Fresh hand. The roll assigned Watchmaker’s Bench. Keep it, take an alternate, or re-roll again.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Watchmaker’s Bench",
+      "kicker": "THE ROLL",
+      "lineage": "a movement under a loupe on a felt bench",
+      "thesis": "One kit control is the movement; everything else is tools at the edge of the loupe.",
+      "palette": ["#1f1a14", "#6b5344", "#c9a66b", "#e7e2d6"],
+      "materials": ["bench felt", "brass loupe ring", "oil-lamp warmth", "steel tweezers"],
+      "viewport": "Felt ground; one giant Knob in a brass loupe; accession-small labels; a right rail of control names as tool wells.",
+      "risk": "Can read as jewelry, not a plugin family you would ship.",
+      "raised": [
+        {
+          "from": "challenger-ascii",
+          "raise": "Grid: labels and the hit share one strict cell grid; nothing floats off the bench."
+        },
+        {
+          "from": "challenger-cyclorama",
+          "raise": "Cue-Phase: idle, hover, pressed, disabled are named cues with pattern, never hue alone."
+        },
+        {
+          "from": "challenger-miura",
+          "raise": "Deploy: one pull opens a tessellation of sizes and states around the live hit."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "tool wells", "x": 0, "y": 0, "w": 2, "h": 10, "accent": true },
+          { "label": "loupe / control", "x": 3, "y": 1, "w": 7, "h": 7, "accent": true },
+          { "label": "state tessellation", "x": 3, "y": 8, "w": 7, "h": 2 },
+          { "label": "readout", "x": 10, "y": 1, "w": 2, "h": 4 }
+        ]
+      }
+    },
+    {
+      "id": "model-pick",
+      "label": "Parts Drawer",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "jeweler’s and hardware parts trays",
+      "thesis": "Each control lives in its own felt compartment; you pull one drawer, you judge one part.",
+      "palette": ["#3d2c24", "#8b6914", "#d8c3a5", "#0e7c66"],
+      "materials": ["divided felt", "wood tray", "paper part labels", "brass pulls"],
+      "viewport": "A tray of labeled wells; the selected well is empty of siblings and holds the live Knob or Pad at full size.",
+      "risk": "The familiar hardware-catalog landing: parts in boxes, closest to a shop drawer.",
+      "comp": ".impeccable/mocks/decision/model-pick.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "drawer labels", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true },
+          { "label": "selected well", "x": 2, "y": 2, "w": 8, "h": 6 },
+          { "label": "other wells", "x": 0, "y": 8, "w": 12, "h": 2 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-signals-instruments-nixie-laboratory-counter",
+      "label": "Nixie Counter",
+      "verdict": "competitive",
+      "lineage": "laboratory nixie-tube counters",
+      "thesis": "The readout is plasma digits in glass; the kit control is the device under test beside the bank.",
+      "palette": ["#141210", "#ff6a1a", "#8a8680", "#f3efe6"],
+      "materials": ["blackened steel", "glass envelopes", "neon orange digits", "engraved caps"],
+      "viewport": "A tube bank for value; the live Slider or Knob sits as the DUT; labels engraved under the chassis.",
+      "case": "Holds identification (lab instrument) and loses clarity (tubes compete with the hit).",
+      "risk": "Orange plasma can feel like TE-adjacent function color unless it stays digits-only.",
+      "comp": ".impeccable/mocks/decision/challenger-signals-instruments-nixie-laboratory-counter.webp",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-nixie-laboratory-counter-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-nixie-laboratory-counter.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "tube bank", "x": 0, "y": 0, "w": 12, "h": 3, "accent": true },
+          { "label": "DUT control", "x": 2, "y": 4, "w": 8, "h": 5 },
+          { "label": "engraved index", "x": 0, "y": 9, "w": 12, "h": 1 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-pop-culture-shelf-elbow-panel-console",
+      "label": "Elbow Panel",
+      "verdict": "competitive",
+      "lineage": "pill-cornered starship wall consoles",
+      "thesis": "Control types are pastel pill banks; the live widget sits in the black glass inside the elbow.",
+      "palette": ["#000000", "#c4b0e0", "#f0c4a8", "#e6c35c", "#8aa4e6"],
+      "materials": ["black glass", "flat pastel blocks", "thick elbows", "numeric code clusters"],
+      "viewport": "A lilac elbow frames the canvas; peach/gold/periwinkle pills are Knob, Slider, Pad, Stepper; gold is the active view.",
+      "case": "Holds clarity (pills as stories) and loses identification (pastel sci-fi, not a shippable plugin family).",
+      "risk": "Costume wall panel if the elbows outrank the control.",
+      "comp": ".impeccable/mocks/decision/challenger-pop-culture-shelf-elbow-panel-console.webp",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-elbow-panel-console-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/pop-culture-shelf-elbow-panel-console.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "elbow", "x": 0, "y": 0, "w": 3, "h": 10, "accent": true },
+          { "label": "pills", "x": 0, "y": 1, "w": 3, "h": 8 },
+          { "label": "black glass / control", "x": 4, "y": 2, "w": 7, "h": 6 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-posters-covers-sleeves-festival-lineup-poster",
+      "label": "Lineup Sheet",
+      "verdict": "competitive",
+      "lineage": "music festival billing posters",
+      "thesis": "Hierarchy is size alone; the selected name inverts and the control appears at headline scale.",
+      "palette": ["#1a0a3c", "#f2e86d"],
+      "materials": ["saturated ground", "one ink", "no imagery", "justified type blocks"],
+      "viewport": "KNOB as the headliner spanning the width; Slider, Pad, Stepper as supporting type; the live widget sits in the inverted name.",
+      "case": "Holds identification (music culture) and loses clarity (type billing is not an isolated hit).",
+      "risk": "A poster that forgot it is a component library.",
+      "comp": ".impeccable/mocks/decision/challenger-posters-covers-sleeves-festival-lineup-poster.webp",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-festival-lineup-poster-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/posters-covers-sleeves-festival-lineup-poster.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "headline name", "x": 0, "y": 0, "w": 12, "h": 3, "accent": true },
+          { "label": "live control", "x": 2, "y": 3, "w": 8, "h": 5 },
+          { "label": "justified tail", "x": 0, "y": 8, "w": 12, "h": 2 }
+        ]
+      }
+    },
+    {
+      "id": "challenger-medium-native-ascii-live-scene-render",
+      "label": "ASCII Live Scene",
+      "verdict": "declined",
+      "lineage": "luminance as glyph density on a monospace grid",
+      "thesis": "The control is sculpture made of characters.",
+      "palette": ["#000000", "#33ff66"],
+      "materials": ["phosphor grid", "period-to-at-sign ramp", "captions in-cell"],
+      "viewport": "A knob rendered as a rotating glyph mass; the index is more text in the same grid.",
+      "case": "Loses both: ASCII demo, not a family of plugins.",
+      "kept": "Grid: one strict cell grid owns the whole bench.",
+      "risk": "A demo reel.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-ascii-live-scene-render-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/medium-native-ascii-live-scene-render.webp",
+      "comp": ".impeccable/mocks/decision/challenger-medium-native-ascii-live-scene-render.webp"
+    },
+    {
+      "id": "challenger-stagecraft-theater-lighting-cyclorama-dawn",
+      "label": "Cyclorama Dawn",
+      "verdict": "declined",
+      "lineage": "theater cyc from night through dawn",
+      "thesis": "States are lighting cues on an infinite horizon.",
+      "palette": ["#05060a", "#1e3a8a", "#e11d48", "#f8fafc"],
+      "materials": ["cyc black", "cobalt band", "rose gather", "day wash"],
+      "viewport": "The control stands in front of a cyc that scrubs idle to pressed as dawn.",
+      "case": "Loses both: atmosphere hides the isolated hit.",
+      "kept": "Cue-Phase: named states with pattern, not color alone.",
+      "risk": "A stage, not a library.",
+      "hero": "https://impeccable.style/worlds/cards/stagecraft-theater-lighting-cyclorama-dawn-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/stagecraft-theater-lighting-cyclorama-dawn.webp",
+      "comp": ".impeccable/mocks/decision/challenger-stagecraft-theater-lighting-cyclorama-dawn.webp"
+    },
+    {
+      "id": "challenger-paper-folds-pleats-deployable-miura-orbit-sheet",
+      "label": "Miura Sheet",
+      "verdict": "declined",
+      "lineage": "deployable Miura-fold aerospace sheets",
+      "thesis": "A packet unfolds into a tessellation of every state.",
+      "palette": ["#f7f4ee", "#c9a227", "#9aa7b2", "#1a1a18"],
+      "materials": ["matte sheet", "gold packet", "mountain/valley scores"],
+      "viewport": "A compact packet labeled Knob; one pull deploys a grid of sizes and states.",
+      "case": "Loses both: origami is not how you inspect a pad.",
+      "kept": "Deploy: one gesture opens the full state field.",
+      "risk": "A paper toy.",
+      "hero": "https://impeccable.style/worlds/cards/paper-folds-pleats-deployable-miura-orbit-sheet-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/paper-folds-pleats-deployable-miura-orbit-sheet.webp",
+      "comp": ".impeccable/mocks/decision/challenger-paper-folds-pleats-deployable-miura-orbit-sheet.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "Storybook, played straight",
+    "thesis": "Sidebar of stories, canvas, addon panel — the category explorer at full craft.",
+    "palette": ["#ffffff", "#2e3438", "#ff4785"],
+    "materials": ["sidebar rail", "canvas well", "controls table", "toolbar"],
+    "viewport": "Left: Knob, Slider, Pad, Stepper, Nameplate, Surface. Center: the isolated control. Right: props.",
+    "risk": "Indistinguishable from every other component library, on purpose.",
+    "comp": ".impeccable/mocks/decision/canon.webp",
+    "wireframe": {
+      "cols": 12,
+      "rows": 10,
+      "regions": [
+        { "label": "stories", "x": 0, "y": 0, "w": 3, "h": 10, "accent": true },
+        { "label": "canvas", "x": 3, "y": 0, "w": 6, "h": 7 },
+        { "label": "addons", "x": 3, "y": 7, "w": 6, "h": 3 },
+        { "label": "props", "x": 9, "y": 0, "w": 3, "h": 10 }
+      ]
+    }
+  },
+  "steer": true
+}

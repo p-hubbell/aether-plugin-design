@@ -1,0 +1,34 @@
+.aether-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0.4rem 0.5rem;
+}
+
+.aether-cell[data-fill='true'] {
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0.35rem 0.5rem;
+}
+
+.aether-cell[data-fill='true'] > * {
+  width: 100%;
+  min-height: 0;
+}
+
+.aether-cell .aether-param {
+  background: transparent;
+}
+
+.aether-cell[data-fill='true'] .aether-param[data-aether='meter'] {
+  height: 100%;
+}
+
+.aether-cell[data-fill='true'] .aether-meter-hit {
+  height: 100%;
+  flex: 1;
+}

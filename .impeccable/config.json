@@ -1,0 +1,117 @@
+{
+  "buildPath": "code",
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-color",
+        "value": "#000",
+        "createdAt": "2026-09-03T02:36:17.515Z",
+        "reason": "User locked HyperCard shoebox: 1-bit ink is the world, not DESIGN.md ice."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#fff",
+        "createdAt": "2026-09-03T02:36:17.547Z",
+        "reason": "User locked HyperCard shoebox: 1-bit paper is the world, not DESIGN.md ice."
+      },
+      {
+        "rule": "design-system-font",
+        "value": "silkscreen",
+        "createdAt": "2026-09-03T02:36:17.578Z",
+        "reason": "User locked HyperCard: obtainable Chicago-weight pixel menu face (OFL)."
+      },
+      {
+        "rule": "design-system-font",
+        "value": "pixelify sans",
+        "createdAt": "2026-09-03T02:36:17.608Z",
+        "reason": "User locked HyperCard: obtainable Geneva-role pixel body face (OFL)."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#000000",
+        "createdAt": "2026-09-03T02:36:17.640Z",
+        "reason": "User locked HyperCard shoebox: 1-bit ink."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#ffffff",
+        "createdAt": "2026-09-03T02:36:17.669Z",
+        "reason": "User locked HyperCard shoebox: 1-bit paper."
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "999px",
+        "createdAt": "2026-09-03T23:05:43.582Z",
+        "reason": "Agent: knob rotor is a 1-bit capsule, not a new DESIGN.md radius token"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "2rem",
+        "createdAt": "2026-09-03T23:16:54.952Z",
+        "reason": "Agent: finish review asked display-scale title vs DESIGN.md 1.375rem label-size Silkscreen"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "vt323",
+        "createdAt": "2026-09-04T00:51:30.184Z",
+        "reason": "User adopted ASCII Live Scene: one sourced monospace grid (VT323 OFL) replaces HyperCard Silkscreen/Pixelify until DESIGN.md is rewritten at finish."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#5cff7a",
+        "createdAt": "2026-09-04T00:53:06.540Z",
+        "reason": "User adopted ASCII Live Scene: phosphor green is the single ink; DESIGN.md HyperCard palette is anti-reference until finish documentation."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#309a48",
+        "createdAt": "2026-09-04T00:53:06.572Z",
+        "reason": "ASCII muted phosphor (same hue, lower luminance) for secondary type on black."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.375rem",
+        "createdAt": "2026-09-04T00:53:06.605Z",
+        "reason": "Catalog title size already in prior DESIGN.md display step; still used on the ASCII shell heading."
+      },
+      {
+        "rule": "design-system-font",
+        "value": "nunito",
+        "createdAt": "2026-09-04T01:13:18.851Z",
+        "reason": "User pinned ethereal audio-pack covers: rounded grotesque for chrome; ASCII field keeps VT323."
+      },
+      {
+        "rule": "design-system-font",
+        "value": "italianno",
+        "createdAt": "2026-09-04T01:13:18.889Z",
+        "reason": "User pinned veilSoundkit script for secondary catalog voice only."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#eef1f4",
+        "createdAt": "2026-09-04T01:13:18.931Z",
+        "reason": "User pinned high-key mist ground vs phosphor black."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#2f3438",
+        "createdAt": "2026-09-04T01:13:18.968Z",
+        "reason": "Charcoal ink on mist for WCAG AA in the ethereal ASCII world."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#5a6570",
+        "createdAt": "2026-09-04T01:13:19.013Z",
+        "reason": "Cool muted fog grey, hue of charcoal not a generic gray-on-color."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#4f6458",
+        "createdAt": "2026-09-04T01:13:19.050Z",
+        "reason": "Desaturated moss accent from the user's hill/mist references; latched-on only."
+      }
+    ]
+  }
+}

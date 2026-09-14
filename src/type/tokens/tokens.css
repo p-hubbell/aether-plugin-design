@@ -1,0 +1,52 @@
+/* Spectral OFL — Production Type old-style. Roman only; ExtraLight is the air. */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('./fonts/Spectral-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/Spectral-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/Spectral-SemiBold.ttf') format('truetype');
+}
+
+:root,
+.aether-gxsc {
+  --font-family: 'Spectral', 'Iowan Old Style', Palatino, serif;
+  --font-family-body: 'Spectral', 'Iowan Old Style', Palatino, serif;
+  --type-size-label: 0.75rem;
+  --type-size-name: 0.9375rem;
+  --type-size-value: 1.25rem;
+  --type-size-display: 2rem;
+  --type-tracking: 0.01em;
+  --type-tracking-tight: 0.01em;
+  --type-tracking-label: 0.02em;
+  --type-weight-display: 200;
+  --type-weight-regular: 400;
+  --type-weight-medium: 600;
+  --type-numeric: tabular-nums;
+  --type-leading: 1.15;
+  --type-style-air: normal;
+  --type-style-hit: normal;
+}
+
+.aether-gxsc {
+  font-family: var(--font-family);
+  font-kerning: normal;
+  font-synthesis: none;
+  font-variant-numeric: var(--type-numeric);
+  line-height: var(--type-leading);
+}

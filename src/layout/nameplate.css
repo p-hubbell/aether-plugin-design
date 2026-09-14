@@ -1,0 +1,73 @@
+.aether-nameplate {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 0.4rem 0.65rem 0.5rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: color-mix(in srgb, var(--page) 48%, transparent);
+  font-family: var(--font-family);
+}
+
+.aether-nameplate-model {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-family);
+  font-size: var(--type-size-display);
+  font-style: var(--type-style-air);
+  font-weight: var(--type-weight-display);
+  letter-spacing: var(--type-tracking);
+  line-height: 1.05;
+}
+
+.aether-nameplate-caption {
+  flex: none;
+  max-width: 48%;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: var(--type-size-name);
+  font-style: var(--type-style-air);
+  letter-spacing: var(--type-tracking-tight, var(--type-tracking));
+  line-height: 1.05;
+}
+
+.aether-bank {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  padding: 0.25rem 0.6rem 0.45rem;
+  gap: 0.15rem;
+}
+
+.aether-bank-label {
+  color: var(--muted);
+  font-family: var(--font-family);
+  font-size: var(--type-size-label);
+  font-style: var(--type-style-air);
+  font-weight: var(--type-weight-regular);
+  letter-spacing: var(--type-tracking-label, var(--type-tracking));
+}
+
+.aether-bank-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 0.6rem;
+  flex: 1;
+  min-height: 0;
+}
